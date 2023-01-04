@@ -1,5 +1,9 @@
 # Liskov Substitution Principle (LSP)
 
+This principle states that objects of a subclass should be able to be used in the same way as objects of the superclass.
+
+In other words, if a class B extends a class A, then any code that works with an object of class A should also work with an object of class B. This means that the subclass should not introduce any new behavior that is not present in the superclass.
+
 ## Within the before folder
 
 `Dog`, `Cat` and `Parrot` extend the superclass `Animal` and override the `makeSound` method.
