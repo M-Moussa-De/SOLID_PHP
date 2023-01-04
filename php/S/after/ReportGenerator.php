@@ -1,7 +1,5 @@
 <?php
 
-namespace App\S\After;
-
 class ReportGenerator
 {
     public function generateReport(Employee $emp): void

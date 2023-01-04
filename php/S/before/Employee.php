@@ -1,7 +1,5 @@
 <?php
 
-namespace App\S\Before;
-
 class Employee
 {
     public function __construct(private string $emp_id, private string $emp_name)
@@ -44,12 +42,3 @@ class Employee
         // logic to generate a report about an employee
     }
 }
-
-
-/*
-* The Employee class is having 2 responsibilities:
-* Firstly, handling employee database operation
-* Secondly, generating reports about an employee
-* This is clearly violating the S in SOLID, which states that a class should have only one reason to change
-* Let's see how can refactor this class to adhere to the SOLID (Please, see the after folder)
-*/

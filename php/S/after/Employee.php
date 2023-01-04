@@ -1,7 +1,5 @@
 <?php
 
-namespace App\S\After;
-
 class Employee
 {
     public function __construct(private string $emp_id, private string $emp_name)
@@ -39,9 +37,3 @@ class Employee
         return false;
     }
 }
-
-
-/*
-* Now, the Employee class has one single responsibility, which is taking care of the employee database operations
-* The responsibility of generating employee report is moved into the ReportGenerator class.
-*/
