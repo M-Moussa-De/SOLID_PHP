@@ -1,10 +1,8 @@
 <?php
 
-namespace App\O\Before;
-
 class Circle
 {
-    public function __construct(protected $radius)
+    public function __construct(protected float $radius)
     {
     }
 

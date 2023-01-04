@@ -1,10 +1,8 @@
 <?php
 
-namespace App\O\Before;
-
 class Triangle
 {
-    public function __construct(protected $base, protected $height)
+    public function __construct(protected float $base, protected float $height)
     {
     }
 

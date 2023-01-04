@@ -1,10 +1,8 @@
 <?php
 
-namespace App\O\Before;
-
 class Rectangle
 {
-    public function __construct(protected $width, protected $height)
+    public function __construct(protected float $width, protected float $height)
     {
     }
 

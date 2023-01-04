@@ -1,10 +1,12 @@
 <?php
 
-namespace App\O\Before;
+require './Circle.php';
+require './Rectangle.php';
+require './Triangle.php';
 
 class AreaCalculator
 {
-    public function __construct(protected $shapes)
+    public function __construct(protected $shapes = [])
     {
     }
 
@@ -30,10 +32,12 @@ class AreaCalculator
     }
 }
 
-/*
-Here, the AreaCalculator class is no longer open for extension because we have to modify its sum() method
-every time we want to add support for a new shape. This violates the Open-Closed Principle.
+$circle = new Circle(14);
+$rectangle = new Rectangle(27, 9.8);
+$triangle = new Triangle(18.6, 23);
 
-To refactor this code to follow the Open-Closed Principle, we can create an interface that defines a getArea() method and have all of our shape classes implement it.
-See the after folder.
-*/
+$area_calc = new AreaCalculator([$circle, $rectangle, $triangle]);
+
+$areas = number_format($area_calc->sum(), 2);
+
+printf("The sum of areas of the three shapes is %s%s", $areas, PHP_EOL); // The sum of areas of the three shapes is 1,094.25
