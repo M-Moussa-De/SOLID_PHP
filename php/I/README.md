@@ -17,6 +17,6 @@ This violates the `Interface Segregation Principle (ISP)`
 To adhere our code to the `ISP`, we need to refactor our code as following:
 
 We divided the necessary methods for vehicles into two interfaces and every class of `Car` and `Plane`
-will implement the suitable interface. This means, that not class will have to implement a method which is not required.
+will implement the suitable interface. This means, that no class will have to implement a method which is not required.
 
 This is exactly what `ISP` states.
